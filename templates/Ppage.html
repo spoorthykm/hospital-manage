@@ -28,8 +28,8 @@
   background-attachment: fixed;
   background-position: center; 
   background-size: 1500px 900px;
-  background-color:rgb(250, 208, 144);
-  background-image:url('C:/Users/ADMIN/Desktop/abcd/djproj/static/img/wall.jpg');
+  background-color:#dddddd;
+  
     }
     
     /* Header/logo Title */
@@ -140,6 +140,7 @@
     }
     tr:nth-child(odd) {
       background-color: #444141;
+      color:white;
       
     }
     tr:nth-child(even) {
@@ -149,12 +150,16 @@
     <div class="navbar">
             <a href={{temp}}>Token</a>
             <a href={{temph}}>History</a>
+          </div>
+    
        
        
       </div>
     
     
 <body>
+
+
     <div>
     <form  align="center" method="post">
         
@@ -166,8 +171,8 @@
                     <table align="center">
                         <tr>
                                 
-                          <td ><font color="white">Name</font></td>
-                          <td><font color="white">{{form.patient_name}}</font></td> 
+                          <td >Name</td>
+                          <td>{{form.patient_name}}</td> 
                                
                         </tr>
                         <tr>
@@ -175,10 +180,10 @@
                           <td>{{form.Dob}}</td>
                           
                         </tr>
-                      
+                
                         <tr>
-                          <td><font color="white">Age</font></td>
-                          <td><font color="white">{{form.Age}}</font></td>
+                          <td>Age</td>
+                          <td>{{form.Age}}</td>
                           
                         </tr>
                         <tr>
@@ -187,8 +192,8 @@
                           
                         </tr>
                         <tr>
-                          <td><font color="white">Address</font></td>
-                          <td><font color="white">{{form.Address}}</font></td>
+                          <td>Address</td>
+                          <td>{{form.Address}}</td>
                         </tr>
                       
                       </tr>

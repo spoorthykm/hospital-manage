@@ -27,8 +27,8 @@
   background-attachment: fixed;
   background-position: center; 
   background-size: 1500px 900px;
-  background-color:rgb(250, 208, 144);
-  background-image:url('C:/Users/ADMIN/Desktop/abcd/djproj/static/img/wall.jpg');
+  background-color:#dddddd;
+  
     }
     
     /* Header/logo Title */
@@ -155,9 +155,11 @@
     <form  method="post">
         {% csrf_token %}
         {% if form %}
-            your token number={{form|length}}
+        <br><br><br>
+          <h1 align="center">  Your token number={{form|length}} <h1>
         {% endif %}
-        <input type="submit" value="Submit">
+        <br><br>
+       <h1 align="center"> <input  type="submit" value="Submit"><h1>
     </form>
 </body>
 </html>

@@ -27,8 +27,8 @@
   background-attachment: fixed;
   background-position: center; 
   background-size: 1500px 900px;
-  background-color:rgb(250, 208, 144);
-  background-image:url('C:/Users/ADMIN/Desktop/abcd/djproj/static/img/wall.jpg');
+  background-color:#dddddd;
+ 
     }
     
     /* Header/logo Title */
@@ -153,9 +153,9 @@
       </div>
     <h1>Report</h1>
     {% for i in form %}
-    <div
-   <p>patient name:{{i.patient.patient_name}}</p>
-   <p>Date:{{i.Date}}</p>
+    <div>
+   patient name:{{i.patient.patient_name}}
+   Date:{{i.Date}}</p>
    <p>Sex:{{i.patient.Sex}}</p>
    <p>age:{{i.patient.Age}}</p>
    <p>address:{{i.patient.Address}}</p>
@@ -173,3 +173,22 @@
 {% endfor %}
 </body>
 </html>
+
+      <table align="center">
+        <tr>
+           <td align="left">Number Of Patient</td>
+          <td>{{p|length}}</td> 
+      
+        </tr>
+        <tr>
+          <td align="left">Number Of Receptionist</td>
+          <td align="center">: {{r|length}}</td>
+          
+        </tr>
+      
+        <tr>
+          <td align="left">Number Of Dctor</td>
+          <td align="center">{{d|length}}</td>
+          
+     </tr>
+   </table>

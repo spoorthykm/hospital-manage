@@ -27,8 +27,8 @@
   background-attachment: fixed;
   background-position: center; 
   background-size: 1500px 900px;
-  background-color:rgb(250, 208, 144);
-  background-image:url('C:/Users/ADMIN/Desktop/abcd/djproj/static/img/wall.jpg');
+  background-color:#dddddd;
+  
     }
     
     /* Header/logo Title */
@@ -67,7 +67,7 @@
     
     /* Change color on hover */
     .navbar a:hover {
-        background-color: #ddd;
+        background-color: #dddddd;
         color: black;
     }
     
@@ -139,10 +139,11 @@
     }
     tr:nth-child(odd) {
       background-color: #444141;
-      
+      color:#dddddd; 
     }
     tr:nth-child(even) {
       background-color: #dddddd;
+
     }
     </style>
 
@@ -153,22 +154,37 @@
        
       </div>
         <form  method="post">
-            <button><a href="/allReport/">Report</a></button>
-            <button><a href={{temp}}>Token</a></button>
-            <button><a href="/Search/">Search</a></button>
+           
             <br>
             <br>
-            {% csrf_token %}
-            {% if value %}
-            Name:{{form.doctor_name}}
-            <br>
-            Contact:{{form.Contact}}
-            <br>
-            Email ID:{{form.Email}}
-            <br>
-            Specification:{{form.Spec}}
-            {% endif %}
+              {% csrf_token %}
+          <table align="center">
+      <tr>
+        <td>Name</td>
+        <td>{{form.doctor_name}}</td> 
+    
+      </tr>
+       <tr>
+        <td>Contact</td>
+        <td>{{form.doctor_name}}</td> 
+    
+      </tr>
+      <tr>
+        <td>Email ID</td>
+        <td>{{form.Email}}</td>
+        
+      </tr>
+       <tr>
+        <td>Specification</td>
+        <td>{{form.Spec}}</td>
+        
+      </tr>
+            </table>
             <br>
         </form>
     </body>
     </html>
+     
+
+
+        

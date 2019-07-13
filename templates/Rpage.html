@@ -27,8 +27,8 @@
   background-attachment: fixed;
   background-position: center; 
   background-size: 1500px 900px;
-  background-color:rgb(250, 208, 144);
-  background-image:url('C:/Users/ADMIN/Desktop/abcd/djproj/static/img/wall.jpg');
+  background-color:#dddddd;
+  
     }
     
     /* Header/logo Title */
@@ -146,19 +146,15 @@
     }
     </style>
     <div class="navbar">
-            <a href={{temp}}>Token</a>
-            <a href={{temph}}>History</a>
-       
-       
+            <a href="/allReport/">Report</a>
+            <a href="/allToken/">Tokens</a>
+            <a href="/allBill/">Bill</a>
+            <a href="/Search/">Search</a>
+            <a href="/createbill/">Create Bill</a>
+            <a href="/CreateReport/">Create Report</a>
       </div>
 <body>
     <form  method="post">
-        <button><a href="/allReport/">Report</a></button>
-        <button><a href="/allToken/">Tokens</a></button>
-        <button><a href="/allBill/">Bill</a></button>
-        <button><a href="/Search/">Search</a></button>
-        <button><a href="/createbill/">Create Bill</a></button>
-        <button><a href="/CreateReport/">Create Report</a></button>
 
 
         <br>
@@ -175,11 +171,11 @@
         {% endif %}</div>
         {% csrf_token %}
         {% if value %}
-        Name:{{form.recp_name}}
+        <h2 align="center">Name:{{form.recp_name}}<h2>
         <br>
-        Contact:{{form.Contact}}
+        <h2 align="center">Contact:{{form.Contact}}<h2>
         <br>
-        Email ID:{{form.Email}}
+        <h2 align="center">Email ID:{{form.Email}}<h2>
         {% endif %}
         <br>
     </form>

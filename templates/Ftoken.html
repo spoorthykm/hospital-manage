@@ -27,8 +27,8 @@
   background-attachment: fixed;
   background-position: center; 
   background-size: 1500px 900px;
-  background-color:rgb(250, 208, 144);
-  background-image:url('C:/Users/ADMIN/Desktop/abcd/djproj/static/img/wall.jpg');
+  background-color:#dddddd;
+  
     }
     
     /* Header/logo Title */
@@ -139,6 +139,7 @@
     }
     tr:nth-child(odd) {
       background-color: #444141;
+      color:white;
       
     }
     tr:nth-child(even) {
@@ -146,22 +147,24 @@
     }
     </style>
     <div class="navbar">
-            <a href={{temp}}>Token</a>
-            <a href={{temph}}>History</a>
-       
-       
       </div>
 <body>
+    <br><br>
+    <div class="container">
     <form  method="post">
         {% csrf_token %}
-        {{ form.name }}
-        <br>
-        Doctor:{{ form.Doctor }}
-        <br>
-        <br>
+        
+       
+       Doctor:  {{ form.Doctor }}
+       <br><br><br>
+        
         Date:{{ form.Date }}
-        <br>
-        <input type="submit" value="Submit">
+        <br><br><br>
+        
+
+<td><input  type="submit" value="Submit"></td></div></tr>
+</table>
+
     </form>
 </body>
 </html>
